@@ -67,7 +67,7 @@ document
 document
   .getElementsByClassName("close4")[0]
   .addEventListener("click", function () {
-    document.getElementsByClassName("box-project")[0].style.top = "-200%";
+    document.getElementsByClassName("box-project")[0].style.top = "-300%";
   });
 document
   .getElementsByClassName("contact1")[0]

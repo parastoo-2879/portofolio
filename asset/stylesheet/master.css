@@ -223,7 +223,7 @@ main .box-education > .close3 {
 main .box-project {
   width: 100%;
   position: absolute;
-  top: -200%;
+  top: -300%;
   left: 0;
   width: 100%;
   z-index: 20;
