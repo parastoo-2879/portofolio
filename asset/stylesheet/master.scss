@@ -1,0 +1,316 @@
+main {
+  height: 100vh;
+  background-image: url(../img/bg-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-weight: bold;
+  overflow-x: hidden;
+  position: relative;
+
+  > header {
+    // font-family: sans-serif;
+    font-family: "Courgette", cursive;
+    height: 80px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    position: relative;
+    > section {
+      cursor: pointer;
+    }
+    > a {
+      position: relative;
+      height: inherit;
+
+      overflow: hidden;
+      &::before,
+      &::after {
+        content: "Contact me";
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transition: 1s;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: -100%;
+      }
+      &:hover {
+        &::before {
+          top: 100%;
+          opacity: 0;
+        }
+        &::after {
+          bottom: 0;
+          color: white;
+        }
+      }
+    }
+    > nav {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: 20;
+      background-image: url(../img/mesh2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      transition: 0.4s;
+      > section {
+        cursor: pointer;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        > i {
+          color: aliceblue !important;
+        }
+      }
+      > ul {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+          transition: 0.4s;
+          &:hover {
+            color: burlywood;
+          }
+        }
+        a {
+          font-size: 2rem;
+        }
+        > * {
+          cursor: pointer;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .box-about {
+    font-family: "Courgette", cursive;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    background-image: linear-gradient(
+      207deg,
+      rgb(179, 8, 82) 47%,
+      rgba(34, 0, 209, 1) 100%
+    );
+    top: -200%;
+    left: 0;
+    transition: 1s;
+    transform: scale(0.25);
+    > .close1 {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5rem;
+      color: aliceblue;
+      z-index: 200;
+      cursor: pointer;
+    }
+    > article {
+      color: aliceblue;
+      > .txt {
+        line-height: 2.4rem;
+      }
+      > figure {
+        > img {
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: 50% 10%;
+        }
+      }
+    }
+  }
+  .banner {
+    height: 80vh;
+    position: relative;
+    // z-index: -1;
+    .txt-anim {
+      height: 30vh;
+      overflow: hidden;
+      > p {
+        transform: translateY(350px);
+        text-align: justify;
+        color: #f0f8ffad;
+        animation: anime1 15s linear infinite;
+      }
+    }
+  }
+  .box-skills {
+    width: 100%;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: 1s;
+    background-image: url(../img/mesh3-min.png);
+    background-position: center;
+    // filter: blur(8px);
+    > .close2 {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5rem;
+      color: aliceblue;
+      z-index: 200;
+      cursor: pointer;
+    }
+    .circle {
+      height: 300px;
+      > svg {
+        circle {
+          fill: transparent;
+          stroke-width: 20px;
+          stroke-dasharray: 0 1494px;
+          stroke-dashoffset: -2053px;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          stroke: #f5f5f5a4;
+        }
+        text {
+          fill: cornsilk;
+          font-size: 2rem;
+        }
+      }
+    }
+    .skill-js circle {
+      animation-name: anime2;
+    }
+    .skill-css circle {
+      animation-name: anime3;
+    }
+    .skill-html circle {
+      animation-name: anime4;
+    }
+  }
+  .box-education {
+    width: 100%;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: 1s;
+    background-image: url(../img/mesh3-min.png);
+    background-position: center;
+    > article {
+      > figure {
+        > img {
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    > .close3 {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5rem;
+      color: aliceblue;
+      z-index: 200;
+      cursor: pointer;
+    }
+  }
+  .box-project {
+    width: 100%;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: 1s;
+    background-image: url(../img/mesh3-min.png);
+    background-position: center;
+    > .close4 {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5rem;
+      color: aliceblue;
+      z-index: 200;
+      cursor: pointer;
+    }
+    figure {
+      position: relative;
+      img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+      }
+      figcaption {
+        position: absolute;
+        width: 80%;
+        height: 40px;
+        bottom: 5%;
+        color: aliceblue;
+        background-color: #03093dd8;
+        display: none;
+        transition: 0.4s;
+      }
+      &:hover {
+        figcaption {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .box-contact {
+    width: 100%;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: 1s;
+    background-image: url(../img/mesh3-min.png);
+    background-position: center;
+    .close5 {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 1.5rem;
+      color: aliceblue;
+      z-index: 200;
+      cursor: pointer;
+    }
+  }
+}
+@keyframes anime1 {
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes anime2 {
+  to {
+    stroke-dasharray: 4px 1490px;
+  }
+}
+@keyframes anime3 {
+  to {
+    stroke-dasharray: 1350px 147px;
+  }
+}
+@keyframes anime4 {
+  to {
+    stroke-dasharray: 1450px 44px;
+  }
+}

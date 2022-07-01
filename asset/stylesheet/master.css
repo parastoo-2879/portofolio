@@ -1,0 +1,329 @@
+main {
+  height: 100vh;
+  background-image: url(../img/bg-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-weight: bold;
+  overflow-x: hidden;
+  position: relative;
+}
+main > header {
+  font-family: "Courgette", cursive;
+  height: 80px;
+  font-size: 1.5rem;
+  color: aliceblue;
+  position: relative;
+}
+main > header > section {
+  cursor: pointer;
+}
+main > header > a {
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+}
+main > header > a::before, main > header > a::after {
+  content: "Contact me";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 1s;
+}
+main > header > a::before {
+  top: 0;
+}
+main > header > a::after {
+  bottom: -100%;
+}
+main > header > a:hover::before {
+  top: 100%;
+  opacity: 0;
+}
+main > header > a:hover::after {
+  bottom: 0;
+  color: white;
+}
+main > header > nav {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 20;
+  background-image: url(../img/mesh2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+main > header > nav > section {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+main > header > nav > section > i {
+  color: aliceblue !important;
+}
+main > header > nav > ul {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > header > nav > ul li {
+  transition: 0.4s;
+}
+main > header > nav > ul li:hover {
+  color: burlywood;
+}
+main > header > nav > ul a {
+  font-size: 2rem;
+}
+main > header > nav > ul > * {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+main .box-about {
+  font-family: "Courgette", cursive;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  background-image: linear-gradient(207deg, rgb(179, 8, 82) 47%, rgb(34, 0, 209) 100%);
+  top: -200%;
+  left: 0;
+  transition: 1s;
+  transform: scale(0.25);
+}
+main .box-about > .close1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 200;
+  cursor: pointer;
+}
+main .box-about > article {
+  color: aliceblue;
+}
+main .box-about > article > .txt {
+  line-height: 2.4rem;
+}
+main .box-about > article > figure > img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
+}
+main .banner {
+  height: 80vh;
+  position: relative;
+}
+main .banner .txt-anim {
+  height: 30vh;
+  overflow: hidden;
+}
+main .banner .txt-anim > p {
+  transform: translateY(350px);
+  text-align: justify;
+  color: rgba(240, 248, 255, 0.6784313725);
+  -webkit-animation: anime1 15s linear infinite;
+          animation: anime1 15s linear infinite;
+}
+main .box-skills {
+  width: 100%;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: 1s;
+  background-image: url(../img/mesh3-min.png);
+  background-position: center;
+}
+main .box-skills > .close2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 200;
+  cursor: pointer;
+}
+main .box-skills .circle {
+  height: 300px;
+}
+main .box-skills .circle > svg circle {
+  fill: transparent;
+  stroke-width: 20px;
+  stroke-dasharray: 0 1494px;
+  stroke-dashoffset: -2053px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  stroke: rgba(245, 245, 245, 0.6431372549);
+}
+main .box-skills .circle > svg text {
+  fill: cornsilk;
+  font-size: 2rem;
+}
+main .box-skills .skill-js circle {
+  -webkit-animation-name: anime2;
+          animation-name: anime2;
+}
+main .box-skills .skill-css circle {
+  -webkit-animation-name: anime3;
+          animation-name: anime3;
+}
+main .box-skills .skill-html circle {
+  -webkit-animation-name: anime4;
+          animation-name: anime4;
+}
+main .box-education {
+  width: 100%;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: 1s;
+  background-image: url(../img/mesh3-min.png);
+  background-position: center;
+}
+main .box-education > article > figure > img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .box-education > .close3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 200;
+  cursor: pointer;
+}
+main .box-project {
+  width: 100%;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: 1s;
+  background-image: url(../img/mesh3-min.png);
+  background-position: center;
+}
+main .box-project > .close4 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 200;
+  cursor: pointer;
+}
+main .box-project figure {
+  position: relative;
+}
+main .box-project figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
+}
+main .box-project figure figcaption {
+  position: absolute;
+  width: 80%;
+  height: 40px;
+  bottom: 5%;
+  color: aliceblue;
+  background-color: rgba(3, 9, 61, 0.8470588235);
+  display: none;
+  transition: 0.4s;
+}
+main .box-project figure:hover figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box-contact {
+  width: 100%;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: 1s;
+  background-image: url(../img/mesh3-min.png);
+  background-position: center;
+}
+main .box-contact .close5 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 200;
+  cursor: pointer;
+}
+
+@-webkit-keyframes anime1 {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes anime1 {
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes anime2 {
+  to {
+    stroke-dasharray: 4px 1490px;
+  }
+}
+@keyframes anime2 {
+  to {
+    stroke-dasharray: 4px 1490px;
+  }
+}
+@-webkit-keyframes anime3 {
+  to {
+    stroke-dasharray: 1350px 147px;
+  }
+}
+@keyframes anime3 {
+  to {
+    stroke-dasharray: 1350px 147px;
+  }
+}
+@-webkit-keyframes anime4 {
+  to {
+    stroke-dasharray: 1450px 44px;
+  }
+}
+@keyframes anime4 {
+  to {
+    stroke-dasharray: 1450px 44px;
+  }
+}/*# sourceMappingURL=master.css.map */

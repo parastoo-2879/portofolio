@@ -1,0 +1,93 @@
+@media screen and(max-width:576px) {
+  .main,
+  .box-about,
+  .box-skills,
+  .box-education,
+  .box-project,
+  .box-contact {
+    min-height: 100vh !important;
+  }
+  .skill-parent,
+  .edu,
+  .pro,
+  .contact-parent {
+    min-height: 70vh !important;
+  }
+
+  .box-about > article > figure > img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .box-education,
+  .box-project {
+    figure {
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+@media screen and(min-width:577px) {
+  .main,
+  .box-about,
+  .box-skills,
+  .box-education,
+  .box-project,
+  .box-contact {
+    min-height: 100vh !important;
+  }
+  .skill-parent,
+  .edu,
+  .pro,
+  .contact-parent {
+    min-height: 70vh !important;
+  }
+
+  .box-about > article > figure > img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .box-education,
+  .box-project {
+    figure {
+      img {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and(min-width:768px) {
+  .box-about > article > figure > img {
+    width: 450px !important;
+    height: 450px !important;
+  }
+}
+@media screen and(min-width:992px) {
+  main {
+    height: 100vh !important;
+  }
+}
+@media screen and(min-width:1200px) {
+  .box-about {
+    > article {
+      > .txt {
+        > h2 {
+          font-size: 2.5rem;
+        }
+        > p {
+          line-height: 2.4rem;
+          font-size: 1.5rem;
+          color: #000000ae;
+        }
+      }
+    }
+  }
+
+  .box-about > article > figure > img {
+    width: 80% !important;
+    height: 80% !important;
+  }
+}

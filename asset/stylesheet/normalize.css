@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  /* border: none; */
+}
+body {
+  font-size: 100%;
+  /* font-family: "Niconne", cursive; */
+  font-family: "Courgette", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
